@@ -1,0 +1,425 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #26332a;
+  background-color: #f2f5f1;
+  overflow-x: hidden;
+}
+
+a {
+  color: #2e7d46;
+}
+
+a:hover {
+  color: #1d5730;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+#site-header {
+  width: 100%;
+  background-color: #729bca;
+  color: #000;
+  padding: 8px 0;
+}
+
+.header-inner {
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#header-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+#logo {
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+#site-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+#main-menu {
+  width: 100%;
+}
+
+#main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+#main-menu li {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#main-menu li:last-child {
+  border-bottom: none;
+}
+
+#main-menu a {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#main-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#content {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+#schedule {
+  order: 1; 
+}
+
+#links {
+  order: 2; 
+}
+
+#anketa {
+  order: 3; 
+}
+
+.card {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dbe4d8;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #2a5738;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+#links li {
+  margin-bottom: 10px;
+}
+
+.schedule-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.schedule {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid #c9d6c6;
+  padding: 8px 10px;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.schedule th {
+  background-color: #38714a;
+  color: #fff;
+}
+
+.schedule tbody tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+.schedule tbody tr:nth-child(even) td {
+  background-color: #e9f1e7;
+}
+
+.schedule .time {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.schedule td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.schedule th,
+.schedule .time {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.schedule td.empty {
+  text-align: center;
+  vertical-align: middle;
+  color: #9aa89a;
+}
+
+.schedule .ksrs {
+  text-align: center;
+  color: #9aa89a;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #f2f5f1 !important;
+  padding-left: 4px;
+  padding-right: 4px;
+  white-space: nowrap;
+}
+
+.anketa-form {
+  width: 100%;
+  max-width: 460px;
+}
+
+.anketa-form input,
+.anketa-form select,
+.anketa-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  font: inherit;
+  border: 1px solid #b5c4b2;
+  border-radius: 5px;
+}
+
+.anketa-form input[type="radio"],
+.anketa-form input[type="checkbox"] {
+  width: auto;
+}
+
+.anketa-form fieldset {
+  border: 1px solid #b5c4b2;
+  border-radius: 5px;
+  margin: 12px 0;
+  padding: 10px 14px;
+}
+
+.anketa-form small {
+  color: #5c6b5e;
+  display: block;
+  margin-top: 4px;
+}
+
+.anketa-form input[type="submit"] {
+  width: 100%;
+  padding: 11px 24px;
+  color: #fff;
+  background-color: #38714a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.anketa-form input[type="submit"]:hover {
+  background-color: #2a5738;
+}
+
+#site-footer {
+  width: 100%;
+  background-color: #223c2b;
+  color: #cfdccb;
+  padding: 16px 0;
+  font-size: 14px;
+}
+
+#site-footer .wrapper {
+  text-align: center;
+}
+
+#site-footer p {
+  margin: 4px 0;
+}
+
+#site-footer a {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+
+  .wrapper {
+    max-width: 960px;
+    padding: 0 16px;
+  }
+
+  #site-header {
+    padding: 6px 0;
+  }
+
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  #header-brand {
+    width: auto;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  #logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  #site-title {
+    font-size: 20px;
+  }
+
+  #main-menu {
+    width: auto;
+  }
+
+  #main-menu ul {
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+    gap: 20px;
+  }
+
+  #main-menu li {
+    width: auto;
+    display: inline-block;
+    border-bottom: none;
+  }
+
+  #main-menu a {
+    width: auto;
+    display: inline-block;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  #content {
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+
+  #links {
+    order: 1;
+  }
+
+  #schedule {
+    order: 2;
+  }
+
+  #anketa {
+    order: 3;
+  }
+
+  .card {
+    padding: 18px 24px;
+    margin-bottom: 24px;
+  }
+
+  .schedule {
+    min-width: 0;
+    font-size: 15px;
+    table-layout: fixed;
+  }
+
+  .schedule th:first-child,
+  .schedule td:first-child {
+    width: 48px;
+  }
+
+  .schedule th:nth-child(2),
+  .schedule td:nth-child(2) {
+    width: 90px;
+  }
+
+  .schedule th:nth-child(3),
+  .schedule td:nth-child(3),
+  .schedule th:nth-child(4),
+  .schedule td:nth-child(4),
+  .schedule th:nth-child(7),
+  .schedule td:nth-child(7),
+  .schedule th:nth-child(8),
+  .schedule td:nth-child(8) {
+    width: 14%;
+  }
+
+  .schedule th:nth-child(5),
+  .schedule td:nth-child(5) {
+    width: 24%;
+  }
+
+  .schedule th:nth-child(6),
+  .schedule td:nth-child(6) {
+    width: 78px;
+  }
+
+  .anketa-form input[type="submit"] {
+    width: auto;
+    padding: 9px 26px;
+    font-size: inherit;
+    font-weight: normal;
+  }
+
+  #site-footer .wrapper {
+    text-align: left;
+  }
+
+}
